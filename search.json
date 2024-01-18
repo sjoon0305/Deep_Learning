@@ -32,7 +32,7 @@
     "href": "posts/DLC2.html#basic-recipe-for-machine-learning",
     "title": "Course2 Part1 by Andrew ng",
     "section": "3. Basic Recipe for Machine Learning",
-    "text": "3. Basic Recipe for Machine Learning\n\nhigh bias\n\n- 해결방법\n\n(더 많은 은닉층 혹은 은닉 유닛을 갖는) 큰 네트워크 선택- Train longer or 더 발전된 최적화 알고리즘 사용\n다른 신경망 아키텍쳐 사용\n\n\nhigh variance\n\n- 해결방법\n\n더 많은 데이터 확보\nRegularization(정규화)\n다른 신경망 아키텍쳐 사용\n\n\n과거에는 편향-분산 트레이드오프가 중요한 요소였지만 현대의 딥러닝 빅데이터 시대에는 더 큰 네트워크로 인해 편향과 분산이 서로 거의 영향을 끼치지 않는다."
+    "text": "3. Basic Recipe for Machine Learning\n\nhigh bias\n\n- 해결방법\n\n(더 많은 은닉층 혹은 은닉 유닛을 갖는) 큰 네트워크 선택- Train longer or 더 발전된 최적화 알고리즘 사용\n다른 신경망 아키텍쳐 사용\n\n\nhigh variance\n\n- 해결방법\n\n더 많은 데이터 확보\nRegularization(정규화)\n\n\n과거에는 편향-분산 트레이드오프가 중요한 요소였지만 현대의 딥러닝 빅데이터 시대에는 더 큰 네트워크로 인해 편향과 분산이 서로 거의 영향을 끼치지 않는다."
   },
   {
     "objectID": "posts/DLC2.html#regularization",
@@ -67,7 +67,7 @@
     "href": "posts/DLC2.html#other-regularization-methods",
     "title": "Course2 Part1 by Andrew ng",
     "section": "8. Other Regularization Methods",
-    "text": "8. Other Regularization Methods\n\nData augmentation\n\n학습을 위해 새로운 이미지가 많으면 많을수록 좋지만 비용적인 한계가 있다.\n그래서 하나의 미지를 수평 방향으로 뒤집거나 회전, 왜곡 및 변형을 하여 샘플에 추가한다\n\n\n\n\nEarly Stopping\n\ntraining set error와 dev set error의 그래프\ndev set error 가 증가하는 순간에 학습을 멈춘다.\n조기 종료를 하기에 비용함수를 잘 줄이지 못한다는 단점이 있다.\n\n\n\n정규화 방법들은 모두 각각의 장점과 단점을 가지고 있다. Overfitting을 피하기 위해선 상황을 잘 고려하고 좋은 결과값이 나오는 정규화 방법을 택해야 한다."
+    "text": "8. Other Regularization Methods\n\nData augmentation\n\n학습을 위해 새로운 이미지가 많으면 많을수록 좋지만 비용적인 한계가 있다.\n그래서 하나의 이미지를 수평 방향으로 뒤집거나 회전, 왜곡 및 변형을 하여 샘플에 추가한다\n\n\n\n\nEarly Stopping\n\ntraining set error와 dev set error의 그래프\ndev set error 가 증가하는 순간에 학습을 멈춘다.\n조기 종료를 하기에 비용함수를 잘 줄이지 못한다는 단점이 있다.\n\n\n\n정규화 방법들은 모두 각각의 장점과 단점을 가지고 있다. Overfitting을 피하기 위해선 상황을 잘 고려하고 좋은 결과값이 나오는 정규화 방법을 택해야 한다."
   },
   {
     "objectID": "posts/DLC1.html",
