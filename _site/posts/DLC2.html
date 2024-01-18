@@ -209,9 +209,7 @@ window.Quarto = {
 <li>그 결과에 기반하여 아이디어를 개선하고 몇 가지 선택을 수정하게 된다. 그리고 더 나은 신경망을 찾기 위해 이 과정을 반복한다.</li>
 </ol>
 <ul>
-<li>매우 반복적인 과정 속에서 빠른 진전을 이루는데 영향을 미치는 것들은 이 사이클을 얼마나 효율적으로 돌아갈 수 있는지와 데이터 셋을 잘 설정하는 것이다. 훈련, 개발, 테스트 셋을 잘 설정하는 것은 과정을 더 효율적으로 만든다.</li>
-<li>머신러닝 이전 시대의 관행적으로는 훈련 데이터 셋을 70%, 테스트 데이터 셋을 30%으로 한다. 혹은 훈련, 개발, 테스트 셋을 각각 60%, 20%, 20%로 나눈다.</li>
-<li>하지만 총 100만 개 이상의 샘플이 존재하는 현대 빅데이터 시대에는 개발 셋과 테스트 셋을 훨씬 더 작은 비율로 나누는 것이 트렌드가 되었다. 즉, 98%의 훈련 셋, 1% 개발 셋, 1% 테스트 셋가 된다. 데이터가 더 많다면 개발과 테스트 셋을 이보다 더 적게 설정해도 된다.</li>
+<li>좋은 모델을 만드는 요소는 이 사이클을 얼마나 효율적으로 돌아갈 수 있는지와 데이터 셋을 잘 설정하는 것이다. 훈련, 개발, 테스트 셋을 잘 설정하는 것은 과정을 더 효율적으로 만든다.</li>
 </ul>
 <blockquote class="blockquote">
 <p>결론적으로, 데이터 셋을 나눌 때 데이터의 수가 적다면 전통적인 70/30이나 60/20/20 으로 비율을 설정해도 괜찮지만 훨씬 데이터의 수가 많다면 개발과 테스트 데이터 셋의 비율을 더 적게 설정하는 것도 좋은 방법이다.</p>
@@ -219,7 +217,7 @@ window.Quarto = {
 </section>
 <section id="biasvariance" class="level2">
 <h2 class="anchored" data-anchor-id="biasvariance">2. Bias/Variance</h2>
-<p><img src="https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/images/bias_variance/bullseye.png " alt="이미지" width="600" height="400"></p>
+<p><img src="https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/images/bias_variance/bullseye.png " alt="이미지" width="600" height="450"></p>
 <ul>
 <li>높은 편향(high bias) → under-fitting</li>
 <li>높은 분산(high variance) → overfitting</li>
