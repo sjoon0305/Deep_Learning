@@ -11,14 +11,14 @@
     "href": "posts/DLC2.html",
     "title": "Course2 Part1 by Andrew ng",
     "section": "",
-    "text": "훈련, 개발, 테스트 데이터 셋을 어떻게 설정할지에 관한 좋은 선택을 내리는 것은 좋은 성능을 내는 네트워크를 빠르게 찾는데 큰 영향을 준다.\n- 신경망을 훈련시킬 때 결정해야하는 것들은 다음과 같이 매우 많다.\n\n층의 수(number of layers)\n뉴런의 수(number of hidden units)\n학습률(learning rate)\n활성화 함수(Activation Function)\n\n- 처음부터 적절한 값을 추정하는 것은 거의 불가능, 다른 hyper parameters도 해당 - 그래서 머신러닝은 매우 반복적인 과정을 거쳐야한다.\n\n처음에는 아이디어로 시작한다.\n그리고 특정 개수의 층과 유닛을 가지고 특정 데이터 셋에 맞는 신경망을 만든다.\n이를 코드로 작성하고 실행하고 성능을 검사한다.\n그 결과에 기반하여 아이디어를 개선하고 몇 가지 선택을 수정하게 된다. 그리고 더 나은 신경망을 찾기 위해 이 과정을 반복한다.\n\n\n좋은 모델을 만드는 요소는 이 사이클을 얼마나 효율적으로 돌아갈 수 있는지와 데이터 셋을 잘 설정하는 것이다. 훈련, 개발, 테스트 셋을 잘 설정하는 것은 과정을 더 효율적으로 만든다.\n\n\n결론적으로, 데이터 셋을 나눌 때 데이터의 수가 적다면 전통적인 70/30이나 60/20/20 으로 비율을 설정해도 괜찮지만 훨씬 데이터의 수가 많다면 개발과 테스트 데이터 셋의 비율을 더 적게 설정하는 것도 좋은 방법이다."
+    "text": "- 신경망을 훈련시킬 때 결정해야하는 것들은 다음과 같이 매우 많다.\n\n층의 수(number of layers)\n뉴런의 수(number of hidden units)\n학습률(learning rate)\n활성화 함수(Activation Function)\n\n- 처음부터 적절한 값을 추정하는 것은 거의 불가능, 다른 hyper parameters도 해당 - 그래서 머신러닝은 매우 반복적인 과정을 거쳐야한다.\n\n처음에는 아이디어로 시작한다.\n그리고 특정 개수의 층과 유닛을 가지고 특정 데이터 셋에 맞는 신경망을 만든다.\n이를 코드로 작성하고 실행하고 성능을 검사한다.\n그 결과에 기반하여 아이디어를 개선하고 몇 가지 선택을 수정하게 된다. 그리고 더 나은 신경망을 찾기 위해 이 과정을 반복한다.\n\n\n훈련, 개발, 테스트 데이터 셋을 어떻게 설정할지에 따라 좋은 모델을 빠르게 찾는데 큰 영향을 준다. 데이터 셋을 나눌 때 데이터의 수가 적다면 전통적인 70/30이나 60/20/20 으로 비율을 설정해도 괜찮지만 훨씬 데이터의 수가 많다면 개발과 테스트 데이터 셋의 비율을 더 적게 설정하는 것도 좋은 방법이다.(98/1/1 or 99/1)"
   },
   {
-    "objectID": "posts/DLC2.html#traindevtest-sets",
-    "href": "posts/DLC2.html#traindevtest-sets",
+    "objectID": "posts/DLC2.html#신경망-초기-설정",
+    "href": "posts/DLC2.html#신경망-초기-설정",
     "title": "Course2 Part1 by Andrew ng",
     "section": "",
-    "text": "훈련, 개발, 테스트 데이터 셋을 어떻게 설정할지에 관한 좋은 선택을 내리는 것은 좋은 성능을 내는 네트워크를 빠르게 찾는데 큰 영향을 준다.\n- 신경망을 훈련시킬 때 결정해야하는 것들은 다음과 같이 매우 많다.\n\n층의 수(number of layers)\n뉴런의 수(number of hidden units)\n학습률(learning rate)\n활성화 함수(Activation Function)\n\n- 처음부터 적절한 값을 추정하는 것은 거의 불가능, 다른 hyper parameters도 해당 - 그래서 머신러닝은 매우 반복적인 과정을 거쳐야한다.\n\n처음에는 아이디어로 시작한다.\n그리고 특정 개수의 층과 유닛을 가지고 특정 데이터 셋에 맞는 신경망을 만든다.\n이를 코드로 작성하고 실행하고 성능을 검사한다.\n그 결과에 기반하여 아이디어를 개선하고 몇 가지 선택을 수정하게 된다. 그리고 더 나은 신경망을 찾기 위해 이 과정을 반복한다.\n\n\n좋은 모델을 만드는 요소는 이 사이클을 얼마나 효율적으로 돌아갈 수 있는지와 데이터 셋을 잘 설정하는 것이다. 훈련, 개발, 테스트 셋을 잘 설정하는 것은 과정을 더 효율적으로 만든다.\n\n\n결론적으로, 데이터 셋을 나눌 때 데이터의 수가 적다면 전통적인 70/30이나 60/20/20 으로 비율을 설정해도 괜찮지만 훨씬 데이터의 수가 많다면 개발과 테스트 데이터 셋의 비율을 더 적게 설정하는 것도 좋은 방법이다."
+    "text": "- 신경망을 훈련시킬 때 결정해야하는 것들은 다음과 같이 매우 많다.\n\n층의 수(number of layers)\n뉴런의 수(number of hidden units)\n학습률(learning rate)\n활성화 함수(Activation Function)\n\n- 처음부터 적절한 값을 추정하는 것은 거의 불가능, 다른 hyper parameters도 해당 - 그래서 머신러닝은 매우 반복적인 과정을 거쳐야한다.\n\n처음에는 아이디어로 시작한다.\n그리고 특정 개수의 층과 유닛을 가지고 특정 데이터 셋에 맞는 신경망을 만든다.\n이를 코드로 작성하고 실행하고 성능을 검사한다.\n그 결과에 기반하여 아이디어를 개선하고 몇 가지 선택을 수정하게 된다. 그리고 더 나은 신경망을 찾기 위해 이 과정을 반복한다.\n\n\n훈련, 개발, 테스트 데이터 셋을 어떻게 설정할지에 따라 좋은 모델을 빠르게 찾는데 큰 영향을 준다. 데이터 셋을 나눌 때 데이터의 수가 적다면 전통적인 70/30이나 60/20/20 으로 비율을 설정해도 괜찮지만 훨씬 데이터의 수가 많다면 개발과 테스트 데이터 셋의 비율을 더 적게 설정하는 것도 좋은 방법이다.(98/1/1 or 99/1)"
   },
   {
     "objectID": "posts/DLC2.html#biasvariance",
@@ -32,21 +32,21 @@
     "href": "posts/DLC2.html#basic-recipe-for-machine-learning",
     "title": "Course2 Part1 by Andrew ng",
     "section": "3. Basic Recipe for Machine Learning",
-    "text": "3. Basic Recipe for Machine Learning\n\n편향 확인-training data set error 확인\n\n- 해결방법\n\n(더 많은 은닉층 혹은 은닉 유닛을 갖는) 큰 네트워크 선택- Train longer or 더 발전된 최적화 알고리즘 사\n다른 신경망 아키텍쳐 사용\n\n\n분산 확인-Dev data set 성능 확인\n\n- 해결방법\n\n더 많은 데이터 확보- Regularization(정규화\n다른 신경망 아키텍쳐 사용\n\n\n과거에는 편향-분산 트레이드오프가 중요한 요소였지만 현대의 딥러닝 빅데이터 시대에는 더 큰 네트워크로 인해 편향과 분산이 서로 거의 영향을 끼치지 않는다."
+    "text": "3. Basic Recipe for Machine Learning\n\nhigh bias-training data set error 확인\n\n- 해결방법\n\n(더 많은 은닉층 혹은 은닉 유닛을 갖는) 큰 네트워크 선택- Train longer or 더 발전된 최적화 알고리즘 사용\n다른 신경망 아키텍쳐 사용\n\n\nhigh variance-Dev data set 성능 확인\n\n- 해결방법\n\n더 많은 데이터 확보\nRegularization(정규화)\n다른 신경망 아키텍쳐 사용\n\n\n과거에는 편향-분산 트레이드오프가 중요한 요소였지만 현대의 딥러닝 빅데이터 시대에는 더 큰 네트워크로 인해 편향과 분산이 서로 거의 영향을 끼치지 않는다."
   },
   {
     "objectID": "posts/DLC2.html#regularization",
     "href": "posts/DLC2.html#regularization",
     "title": "Course2 Part1 by Andrew ng",
     "section": "4. Regularization",
-    "text": "4. Regularization\n높은 분산으로 Overfitting이 일어났을때 - 더 많은 훈련 데이터를 얻는다. → 비용이 많이 든다. - 그래서 정규화를 시도해본다.\n\nL2 Regularization\n- Logistic Regression\n\n\\(J(W, b) = {1 \\over m}\\sum_{i=1}^m\\mathcal{L}(\\hat{y},y^{i})+{\\lambda \\over 2m}\\| w \\|^2_2++{\\lambda \\over 2m}b^2\\)\n\n- Neural Networks\n\n\\(J(W_1, b_1,...,W_L, b_L) = {1 \\over m}\\sum_{i=1}^m\\mathcal{L}(\\hat{y},y^{i}) + {\\lambda \\over 2m}\\sum_l\\sum_i\\sum_j\\| w^{[l]}_{ij} \\|^2_F\\)\n정규화의 종류에는 L1 정규화와 L2 정규화가 있고 대부분 L2 정규화를 많이 사용한다\n정규화를 하게 되면 가중치(\\(w\\)) 값들이 작아지게 된다\n\n\n결론적으로, 높은 분산 문제가 발생하였을 경우 더 많은 훈련 데이터 셋을 확보할 수 없다면 정규화를 시도해볼 수 있다."
+    "text": "4. Regularization\n- 높은 분산으로 Overfitting이 일어났을때\n\n더 많은 훈련 데이터를 얻는다. → 비용이 많이 든다.\n그래서 정규화를 시도해본다.\n\n\nL2 Regularization\n- Logistic Regression\n\n\\(J(W, b) = {1 \\over m}\\sum_{i=1}^m\\mathcal{L}(\\hat{y},y^{i})+{\\lambda \\over 2m}\\| w \\|^2_2++{\\lambda \\over 2m}b^2\\)\n\n- Neural Networks\n\n\\(J(W_1, b_1,...,W_L, b_L) = {1 \\over m}\\sum_{i=1}^m\\mathcal{L}(\\hat{y},y^{i}) + {\\lambda \\over 2m}\\sum_l\\sum_i\\sum_j\\| w^{[l]}_{ij} \\|^2_F\\)\n정규화의 종류에는 L1 정규화와 L2 정규화가 있고 대부분 L2 정규화를 많이 사용한다\n정규화를 하게 되면 가중치(\\(w\\)) 값들이 작아지게 된다\n\n\n결론적으로, 높은 분산 문제가 발생하였을 경우 더 많은 훈련 데이터 셋을 확보할 수 없다면 정규화를 시도해볼 수 있다."
   },
   {
     "objectID": "posts/DLC2.html#과적합을-줄이기-위해-왜-정규화를-하는가",
     "href": "posts/DLC2.html#과적합을-줄이기-위해-왜-정규화를-하는가",
     "title": "Course2 Part1 by Andrew ng",
     "section": "5. 과적합을 줄이기 위해 왜 정규화를 하는가?",
-    "text": "5. 과적합을 줄이기 위해 왜 정규화를 하는가?\n\n\nOverfitting이 발생하는 원인은 네트워크가 너무 커서 매우 복잡한 비선형 함수를 만들기 때문이다.\n정규화는 이를 해결하여 Overfitting의 가능성을 줄여줄 수 있다.\n정규화를 하면 아래식의 파란색 부분(L2 정규화)을 더해주게 된다.\n\\(\\color{red}\\lambda\\)는 정규화 매개변수\n\\(J(W_1, b_1,...,W_L, b_L) = {1 \\over m}\\sum_{i=1}^m\\mathcal{L}(\\hat{y},y^{i}) + \\color{blue}{\\color{red}\\lambda \\over 2m}\\sum_l\\sum_i\\sum_j\\| w^{[l]}_{ij} \\|^2_F\\)\n이렇게 페널티를 추가하면 일부 뉴런의 영향이 작아지거나 없어져서 모델이 더 단순해진다.\n\n- 직관적인 예시\n\n\\(\\lambda\\)가 커질때 비용 함수가 커지지 않으려면 상대적으로 \\(w\\)가 작아진다\n\\(w\\)가 작으면 \\(z\\)도 상대적으로 작은값을 가지게 된다\n\\(z\\)가 상대적으로 작은값을 갖게 되면 \\(tanh(z)\\)는 0 근처에서 거의 1차원 함수가 된다\n따라서 모든 층은 선형 회귀처럼 거의 직선의 함수를 갖게 된다.\n모든 층이 선형이면 전체 네트워크도 선형이 된다.\n\n\\(z^{[l]} = w^{[l]}*a^{[l-1]} + b^{l}\\)\n\n\n정규화를 하게 되면 정규화 매개변수를 포함한 추가적인 항을 손실함수에 더하게 되고 그럼 결국 가중치(\\(w\\))가 작아져 은닉층의 유닛들의 영향력이 작아지고 네트워크의 복잡도가 줄어든다."
+    "text": "5. 과적합을 줄이기 위해 왜 정규화를 하는가?\n\n\nOverfitting이 발생하는 원인은 네트워크가 너무 커서 매우 복잡한 비선형 함수를 만들기 때문이다.\n정규화는 이를 해결하여 Overfitting의 가능성을 줄여줄 수 있다.\n정규화를 하면 아래식의 파란색 부분(L2 정규화 항)을 더해주게 된다.\n\\(\\color{red}\\lambda\\)는 정규화 매개변수\n\\(J(W_1, b_1,...,W_L, b_L) = {1 \\over m}\\sum_{i=1}^m\\mathcal{L}(\\hat{y},y^{i}) + \\color{blue}{\\color{red}\\lambda \\over 2m}\\sum_l\\sum_i\\sum_j\\| w^{[l]}_{ij} \\|^2_F\\)\n이렇게 페널티를 추가하면 일부 뉴런의 영향이 작아지거나 없어져서 모델이 더 단순해진다.\n\n- 직관적인 예시:tanh(z) 함수\n\n\\(\\lambda\\)가 커질때 비용 함수가 커지지 않으려면 상대적으로 \\(w\\)가 작아진다\n\\(w\\)가 작으면 \\(z\\)도 상대적으로 작은값을 가지게 된다\n\\(z\\)가 상대적으로 작은값을 갖게 되면 \\(tanh(z)\\)는 0 근처에서 거의 1차원 함수가 된다\n따라서 모든 층은 선형 회귀처럼 거의 직선의 함수를 갖게 된다.\n모든 층이 선형이면 전체 네트워크도 선형이 된다.\n\n\\(z^{[l]} = w^{[l]}*a^{[l-1]} + b^{l}\\)\n\n\n정규화를 하게 되면 정규화 매개변수를 포함한 추가적인 항을 손실함수에 더하게 되고 그럼 결국 가중치(\\(w\\))가 작아져 은닉층의 유닛들의 영향력이 작아지고 네트워크의 복잡도가 줄어든다."
   },
   {
     "objectID": "posts/DLC2.html#dropout-regularization",
@@ -60,7 +60,7 @@
     "href": "posts/DLC2.html#understanding-dropout",
     "title": "Course2 Part1 by Andrew ng",
     "section": "7. Understanding Dropout",
-    "text": "7. Understanding Dropout\n- Dropout이 정규화의 효과가 나는 이유는?\n\n더 작고 간단한 신경말을 사용하게 되면서 정규화의 효과를 주게 된다.\n단일 유닛의 예시\n\n  \n\n이런 식으로 드롭아웃을 통해 무작위로 유닛들이 삭제되어 서로 다른 다양한 input을 오른쪽의 단일 유닛은 전달 받게 된다.\n따라서 오른쪽의 단일 유닛은 어떠한 입력 특성에도 의존할 수 없다. 하나의 특정 입력에 유난히 큰 가중치를 부여할 수 없으므로 가중치를 4개의 input에 각각 분산시킨다.\n즉, 가중치를 분산시킴으로써 가중치의 Norm(L2 정규화)이 줄어들게 된다.\n\n\nDropout은 정규화 기법이고 Overfitting을 막는데 도움을 준다."
+    "text": "7. Understanding Dropout\n- Dropout이 정규화의 효과가 나는 이유는?\n\n더 작고 간단한 신경말을 사용하게 되면서 정규화의 효과를 주게 된다.\n단일 유닛의 예시\n\n \n\n이런 식으로 드롭아웃을 통해 무작위로 유닛들이 삭제되어 서로 다른 다양한 input을 오른쪽의 단일 유닛은 전달 받게 된다.\n따라서 오른쪽의 단일 유닛은 어떠한 입력 특성에도 의존할 수 없다. 하나의 특정 입력에 유난히 큰 가중치를 부여할 수 없으므로 가중치를 4개의 input에 각각 분산시킨다.\n즉, 가중치를 분산시킴으로써 가중치의 Norm(L2 정규화)이 줄어들게 된다.\n\n\nDropout도 정규화 기법이고 Overfitting을 막는데 도움을 준다."
   },
   {
     "objectID": "posts/DLC2.html#other-regularization-methods",

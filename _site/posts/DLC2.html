@@ -191,9 +191,8 @@ window.Quarto = {
 
 
 
-<section id="traindevtest-sets" class="level2">
-<h2 class="anchored" data-anchor-id="traindevtest-sets">1. Train/Dev/Test Sets</h2>
-<p>훈련, 개발, 테스트 데이터 셋을 어떻게 설정할지에 관한 좋은 선택을 내리는 것은 좋은 성능을 내는 네트워크를 빠르게 찾는데 큰 영향을 준다.</p>
+<section id="신경망-초기-설정" class="level2">
+<h2 class="anchored" data-anchor-id="신경망-초기-설정">1. 신경망 초기 설정</h2>
 <p><code>-</code> 신경망을 훈련시킬 때 결정해야하는 것들은 다음과 같이 매우 많다.</p>
 <ul>
 <li>층의 수(number of layers)</li>
@@ -208,11 +207,8 @@ window.Quarto = {
 <li>이를 코드로 작성하고 실행하고 성능을 검사한다.</li>
 <li>그 결과에 기반하여 아이디어를 개선하고 몇 가지 선택을 수정하게 된다. 그리고 더 나은 신경망을 찾기 위해 이 과정을 반복한다.</li>
 </ol>
-<ul>
-<li>좋은 모델을 만드는 요소는 이 사이클을 얼마나 효율적으로 돌아갈 수 있는지와 데이터 셋을 잘 설정하는 것이다. 훈련, 개발, 테스트 셋을 잘 설정하는 것은 과정을 더 효율적으로 만든다.</li>
-</ul>
 <blockquote class="blockquote">
-<p>결론적으로, 데이터 셋을 나눌 때 데이터의 수가 적다면 전통적인 70/30이나 60/20/20 으로 비율을 설정해도 괜찮지만 훨씬 데이터의 수가 많다면 개발과 테스트 데이터 셋의 비율을 더 적게 설정하는 것도 좋은 방법이다.</p>
+<p>훈련, 개발, 테스트 데이터 셋을 어떻게 설정할지에 따라 좋은 모델을 빠르게 찾는데 큰 영향을 준다. 데이터 셋을 나눌 때 데이터의 수가 적다면 전통적인 70/30이나 60/20/20 으로 비율을 설정해도 괜찮지만 훨씬 데이터의 수가 많다면 개발과 테스트 데이터 셋의 비율을 더 적게 설정하는 것도 좋은 방법이다.(98/1/1 or 99/1)</p>
 </blockquote>
 </section>
 <section id="biasvariance" class="level2">
@@ -257,19 +253,20 @@ window.Quarto = {
 <section id="basic-recipe-for-machine-learning" class="level2">
 <h2 class="anchored" data-anchor-id="basic-recipe-for-machine-learning">3. Basic Recipe for Machine Learning</h2>
 <ol type="1">
-<li>편향 확인-training data set error 확인</li>
+<li>high bias-training data set error 확인</li>
 </ol>
 <p><code>-</code> 해결방법</p>
 <ul>
-<li>(더 많은 은닉층 혹은 은닉 유닛을 갖는) 큰 네트워크 선택- Train longer or 더 발전된 최적화 알고리즘 사</li>
+<li>(더 많은 은닉층 혹은 은닉 유닛을 갖는) 큰 네트워크 선택- Train longer or 더 발전된 최적화 알고리즘 사용</li>
 <li>다른 신경망 아키텍쳐 사용</li>
 </ul>
 <ol start="2" type="1">
-<li>분산 확인-Dev data set 성능 확인</li>
+<li>high variance-Dev data set 성능 확인</li>
 </ol>
 <p><code>-</code> 해결방법</p>
 <ul>
-<li>더 많은 데이터 확보- Regularization(정규화</li>
+<li>더 많은 데이터 확보</li>
+<li>Regularization(정규화)</li>
 <li>다른 신경망 아키텍쳐 사용</li>
 </ul>
 <blockquote class="blockquote">
@@ -278,7 +275,11 @@ window.Quarto = {
 </section>
 <section id="regularization" class="level2">
 <h2 class="anchored" data-anchor-id="regularization">4. Regularization</h2>
-<p>높은 분산으로 Overfitting이 일어났을때 - 더 많은 훈련 데이터를 얻는다. → 비용이 많이 든다. - 그래서 정규화를 시도해본다.</p>
+<p><code>-</code> 높은 분산으로 Overfitting이 일어났을때</p>
+<ul>
+<li>더 많은 훈련 데이터를 얻는다. → 비용이 많이 든다.</li>
+<li>그래서 정규화를 시도해본다.</li>
+</ul>
 <section id="l2-regularization" class="level3">
 <h3 class="anchored" data-anchor-id="l2-regularization">L2 Regularization</h3>
 <p><code>-</code> Logistic Regression</p>
@@ -302,12 +303,12 @@ window.Quarto = {
 <ul>
 <li><p>Overfitting이 발생하는 원인은 네트워크가 너무 커서 매우 복잡한 비선형 함수를 만들기 때문이다.</p></li>
 <li><p>정규화는 이를 해결하여 Overfitting의 가능성을 줄여줄 수 있다.</p></li>
-<li><p>정규화를 하면 아래식의 파란색 부분(L2 정규화)을 더해주게 된다.</p></li>
+<li><p>정규화를 하면 아래식의 파란색 부분(L2 정규화 항)을 더해주게 된다.</p></li>
 <li><p><span class="math inline">\(\color{red}\lambda\)</span>는 정규화 매개변수</p></li>
 <li><p><span class="math inline">\(J(W_1, b_1,...,W_L, b_L) = {1 \over m}\sum_{i=1}^m\mathcal{L}(\hat{y},y^{i}) + \color{blue}{\color{red}\lambda \over 2m}\sum_l\sum_i\sum_j\| w^{[l]}_{ij} \|^2_F\)</span></p></li>
 <li><p>이렇게 페널티를 추가하면 일부 뉴런의 영향이 작아지거나 없어져서 모델이 더 단순해진다.</p></li>
 </ul>
-<p><code>-</code> 직관적인 예시</p>
+<p><code>-</code> 직관적인 예시:tanh(z) 함수</p>
 <ul>
 <li><span class="math inline">\(\lambda\)</span>가 커질때 비용 함수가 커지지 않으려면 상대적으로 <span class="math inline">\(w\)</span>가 작아진다</li>
 <li><span class="math inline">\(w\)</span>가 작으면 <span class="math inline">\(z\)</span>도 상대적으로 작은값을 가지게 된다</li>
@@ -347,14 +348,14 @@ window.Quarto = {
 <li>더 작고 간단한 신경말을 사용하게 되면서 정규화의 효과를 주게 된다.</li>
 <li>단일 유닛의 예시</li>
 </ol>
-<p><img src="https://velog.velcdn.com/images%2Fjhlee508%2Fpost%2F6af3e307-d718-48be-a9b3-f45a5bb2b3ba%2Fimage.png" class="img-fluid" style="width:30.0%" alt="이미지1"> <img src="https://velog.velcdn.com/images%2Fjhlee508%2Fpost%2Fc4cc167e-7faa-4fda-9b7b-a1e10191be26%2Fimage.png" class="img-fluid" style="width:30.0%" alt="이미지2"> <img src="https://velog.velcdn.com/images%2Fjhlee508%2Fpost%2F8285e671-0558-483a-8ae2-7abea665b945%2Fimage.png" class="img-fluid" width="30" alt="이미지3"></p>
+<p><img src="https://velog.velcdn.com/images%2Fjhlee508%2Fpost%2Fc4cc167e-7faa-4fda-9b7b-a1e10191be26%2Fimage.png" class="img-fluid" style="width:50.0%" alt="이미지2"> <img src="https://velog.velcdn.com/images%2Fjhlee508%2Fpost%2F22eb0d64-ca58-4ed5-99f2-6d71283d084f%2Fimage.png" class="img-fluid" style="width:50.0%" alt="이미지3"></p>
 <ul>
 <li>이런 식으로 드롭아웃을 통해 무작위로 유닛들이 삭제되어 서로 다른 다양한 input을 오른쪽의 단일 유닛은 전달 받게 된다.</li>
 <li>따라서 오른쪽의 단일 유닛은 어떠한 입력 특성에도 의존할 수 없다. 하나의 특정 입력에 유난히 큰 가중치를 부여할 수 없으므로 가중치를 4개의 input에 각각 분산시킨다.</li>
 <li>즉, 가중치를 분산시킴으로써 가중치의 Norm(L2 정규화)이 줄어들게 된다.</li>
 </ul>
 <blockquote class="blockquote">
-<p>Dropout은 정규화 기법이고 Overfitting을 막는데 도움을 준다.</p>
+<p>Dropout도 정규화 기법이고 Overfitting을 막는데 도움을 준다.</p>
 </blockquote>
 </section>
 <section id="other-regularization-methods" class="level2">
